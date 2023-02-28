@@ -24,7 +24,7 @@ body {
 
 .main-nav li{
     display: inline-block;
-    padding-right: 5%;
+    padding-right: 20px;
     padding-left: 0;
     width: 100px;
 }
@@ -43,7 +43,7 @@ body {
     display: none;
 }
 
-.main-nav li>a:hover + .li-arrow {
+.main-nav li a:hover + .li-arrow {
     color: #D8BA53;
     display: block;
 }
@@ -118,7 +118,7 @@ p {
     color: #D8BA53;
 }
 
-@media screen and (max-width: 574px){
+@media screen and (max-width: 803px){
     .main-nav {
         display: none;
     }
