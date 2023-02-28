@@ -10,7 +10,7 @@ body {
     background: #202020;
     height: 780px;
     display: block;
-    z-index: 8;
+    /* z-index: 8; */
 }
 
 .main-nav {
@@ -19,7 +19,7 @@ body {
     list-style-type: none;
     /* margin: 0; */
     padding: 0;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .main-nav li{
@@ -43,7 +43,7 @@ body {
     display: none;
 }
 
-.main-nav li a:hover + .li-arrow {
+.main-nav li>a:hover + .li-arrow {
     color: #D8BA53;
     display: block;
 }
@@ -116,4 +116,15 @@ p {
 
 #main-more p a:hover {
     color: #D8BA53;
+}
+
+@media screen and (max-width: 574px){
+    .main-nav {
+        display: none;
+    }
+
+    .main-text {
+        bottom: 0;
+        margin-bottom: 20%;
+    }
 }
