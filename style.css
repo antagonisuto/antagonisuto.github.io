@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:regular,bold'); 
+
+body {
+    margin: 0 0;
+}
+
+.main-section {
+    position: absolute;
+    width: 100%;
+    background: #202020;
+    height: 780px;
+    display: block;
+    z-index: 8;
+}
+
+.main-nav {
+    position: absolute;
+    margin-left: 15%;
+    list-style-type: none;
+    /* margin: 0; */
+    padding: 0;
+    padding-top: 10px;
+}
+
+.main-nav li{
+    display: inline-block;
+    padding-right: 5%;
+    padding-left: 0;
+    width: 100px;
+}
+
+.main-nav li a {
+    font-family: 'Ubuntu';
+    font-style: regular;
+    text-decoration: none;
+    color: #F1F1F1;
+}
+
+.li-arrow {
+    /* position: absolute; */
+    margin-top: -10px;
+    margin-left: 10px;
+    display: none;
+}
+
+.main-nav li a:hover + .li-arrow {
+    color: #D8BA53;
+    display: block;
+}
+
+.main-text {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 20%;
+}
+
+h1, h3 {
+    font-family: 'Ubuntu';
+    font-style: regular;
+    font-weight: 700;
+    font-size: 40px;
+    /* line-height: 46px; */
+    color: #F1F1F1;
+}
+
+h3 {
+    font-size: 24px; 
+    font-weight: 400;
+}
+
+.main-text img{
+    position: absolute;
+    margin-top: -30px;
+}
+
+#main-image {
+    /* z-index: -1; */
+    /* overflow: hidden; */
+    /* position: absolute;
+    right: 0; */
+    position: relative;
+    float: right;
+    height: 780px;
+    width: auto;
+}
+
+p {
+    font-family: 'Ubuntu';
+    font-style: regular;
+    font-size: 16px;
+}
+
+#main-more {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    padding: 20px;
+    padding-left: 0;
+    color: #F1F1F1;
+}
+
+#main-more img {
+    padding-right: 5px;
+}
+
+.inline {
+    display: inline;
+}
+
+#main-more p a {
+    font-family: 'Ubuntu';
+    font-style: regular;
+    text-decoration: none;
+    color: #F1F1F1;
+}
+
+#main-more p a:hover {
+    color: #D8BA53;
+}
