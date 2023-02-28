@@ -6,7 +6,10 @@
     </head>
     <body>
         <div class="main-section">
-            <img id="main-image" src="img/main-photo.png" alt="main-photo">
+            <picture id="main-image-mobile">
+                <source srcset="img/main-photo-mobile.png" media="(max-width: 803px)">
+                <img id="main-image" src="img/main-photo.png" alt="main-photo">
+            </picture>
             <ul class="main-nav">
                 <li>
                     <a href="#home">home</a>
