@@ -8,7 +8,7 @@ body {
     position: absolute;
     width: 100%;
     background: #202020;
-    height: 780px;
+    height: 98vh;
     display: block;
     /* z-index: 8; */
 }
@@ -80,7 +80,7 @@ h3 {
     right: 0; */
     position: relative;
     float: right;
-    height: 780px;
+    height: 98vh;
     width: auto;
 }
 
