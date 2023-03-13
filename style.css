@@ -5,31 +5,48 @@ body {
 }
 
 .main-section {
-    position: absolute;
     width: 100%;
-    background: #202020;
+    background-image: url(img/main-photo.png);
+    background-color: #202020;
+    background-repeat: no-repeat;
+    background-position: right;
     height: 98vh;
-    display: block;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     /* z-index: 8; */
 }
 
-.main-nav {
-    position: absolute;
-    margin-left: 15%;
-    list-style-type: none;
-    /* margin: 0; */
-    padding: 0;
-    padding-top: 20px;
+.content {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; 
+    padding-bottom: 10px;  
 }
 
-.main-nav li{
+nav {
+    left: 10%;
+    position: absolute;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 30px;
+}
+
+nav li{
     display: inline-block;
     padding-right: 20px;
     padding-left: 0;
     width: 100px;
 }
 
-.main-nav li a {
+nav li a {
     font-family: 'Ubuntu';
     font-style: regular;
     text-decoration: none;
@@ -37,21 +54,21 @@ body {
 }
 
 .li-arrow {
-    /* position: absolute; */
+    position: absolute;
     margin-top: -10px;
     margin-left: 10px;
     display: none;
 }
 
-.main-nav li a:hover + .li-arrow {
+nav li a:hover + .li-arrow {
     color: #D8BA53;
     display: block;
 }
 
 .main-text {
-    position: absolute;
-    margin-left: 15%;
-    margin-top: 20%;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
 }
 
 h1, h3 {
@@ -68,21 +85,10 @@ h3 {
     font-weight: 400;
 }
 
-.main-text img{
-    width: 100%;
+.img-accent{
+    width: min-content;
     position: absolute;
-    margin-top: -30px;
-}
-
-#main-image {
-    /* z-index: -1; */
-    /* overflow: hidden; */
-    /* position: absolute;
-    right: 0; */
-    position: relative;
-    float: right;
-    height: 98vh;
-    width: auto;
+    margin-top: 60px;
 }
 
 p {
@@ -91,89 +97,44 @@ p {
     font-size: 16px;
 }
 
-#main-more {
-    position: absolute;
-    bottom: 0;
-    left: 15%;
-    padding: 20px;
-    padding-left: 0;
+.main-more {
+    padding: 0;
     color: #F1F1F1;
-}
-
-#main-more img {
-    padding-right: 5px;
 }
 
 .inline {
     display: inline;
 }
 
-#main-more p a {
+.main-more p a {
     font-family: 'Ubuntu';
     font-style: regular;
     text-decoration: none;
     color: #F1F1F1;
 }
 
-#main-more p a:hover {
+.main-more p a:hover {
     color: #D8BA53;
 }
 
-@media only screen and (max-width: 803px){
-    .main-section {
-        display: flex;
-        height: 90vh;
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
-    .main-nav {
-        display: none;
-    }
+a.button {
+    appearance: button;
+    font-family: 'Ubuntu';
+    font-style: regular;
 
-    .main-text {
-        bottom: 0;
-        margin-bottom: 40%;
-        position: absolute;
-    }
-
-    .main-text h1 {
-        /* text-align: center; */
-        font-size: 4ex;
-    }
-
-    .main-text h3 {
-        font-size: 2ex;
-    }
-
-    #main-image-mobile,  #main-image{
-        position: relative;
-        float: right;
-        height: 90vh;
-    }
-
-    .main-text img {
-        position: absolute;
-        left: 0;
-        margin-top: -20px;
-        align-content: center;
-    }
-
-    .main-image {
-        /* width: 1vw; */
-        height: auto;
-    }
-
-    #main-more {
-        bottom: 10%;
-    }
-
-    #main-more img {
-        width: 10px;
-        height: auto;
-    }
-
-    #main-more p {
-        font-size: 12px;
-    }
-
+    padding: 12px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px 0px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #F1F1F1;
+    color: #F1F1F1;
 }
+
+a.button:hover{
+    border: 2px solid #D8BA53;
+    color: #D8BA53;
+} 
