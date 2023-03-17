@@ -4,6 +4,10 @@ body {
     margin: 0 0;
 }
 
+h1, h2, h3, h4, h5, p {
+    line-height: 130%;
+}
+
 .main-section {
     width: 100%;
     background-image: url(img/main-photo.png);
@@ -17,6 +21,17 @@ body {
     /* z-index: 8; */
 }
 
+.section{
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 10%;
+    /* padding-bottom: 10%; */
+    /* z-index: 8; */
+}
+
 .content {
     width: 80%;
     height: 70%;
@@ -25,6 +40,33 @@ body {
     align-items: flex-start;
     justify-content: space-between; 
     padding-bottom: 10px;  
+}
+
+.content h1 {
+    color:#202020;
+    margin: 0;
+    margin-bottom: 10%;
+}
+
+
+.content h3 {
+    font-weight: 700;
+    color:#202020;
+    margin: 0;
+}
+
+.content .htext img{
+    position: absolute;
+    margin: 20px 0;
+
+}
+
+.content .htext p {
+    width: 400px;
+}
+
+.htext {
+    margin-bottom: 5%;
 }
 
 nav {
@@ -74,14 +116,24 @@ nav li a:hover + .li-arrow {
 h1, h3 {
     font-family: 'Ubuntu';
     font-style: regular;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 40px;
     /* line-height: 46px; */
-    color: #F1F1F1;
+    color: #202020;
 }
 
 h3 {
     font-size: 24px; 
+    font-weight: 400;
+}
+
+.main-text div h1 {
+    font-weight: 700;
+    color: #F1F1F1;
+}
+
+.main-text div h3 {
+    color: #F1F1F1;
     font-weight: 400;
 }
 
@@ -95,6 +147,7 @@ p {
     font-family: 'Ubuntu';
     font-style: regular;
     font-size: 16px;
+    line-height: 130%;
 }
 
 .main-more {
@@ -117,7 +170,7 @@ p {
     color: #D8BA53;
 }
 
-a.button {
+.button-light, .button-dark{
     appearance: button;
     font-family: 'Ubuntu';
     font-style: regular;
@@ -134,7 +187,38 @@ a.button {
     color: #F1F1F1;
 }
 
-a.button:hover{
+.button-dark {
+    border: 2px solid #202020;
+    color: #202020;
+}
+
+.button-light:hover, .button-dark:hover{
     border: 2px solid #D8BA53;
     color: #D8BA53;
 } 
+/* .button-attention {
+    display: flex;
+} */
+
+.button-attention img {
+    height: 50px;
+    width:min-content;
+    position: absolute;
+}
+
+.temp{
+    display: flex;
+}
+
+.posts {
+    width: 60%;
+}
+
+.posts img {
+    width: 100%;
+}
+
+span {
+    display: block;
+    margin-bottom: 1.5em;
+}
