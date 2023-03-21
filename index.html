@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 750px)" href="style-mobile.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>   
   </head>
@@ -153,7 +154,10 @@
                     <h3>e-mail: <a href="mailto:madina.saparbayeva@alumni.nu.edu.kz">madina.saparbayeva@alumni.nu.edu.kz</a></h3>
                     <h3>CV: <a href="CV_MadinaS_ML.pdf">See CV of ML Engineer</a></h3>
                 </div>
-                <img src="icons/contact.svg" class="outline-svg">
+                <picture>
+                    <source media="(max-width:750px)" srcset="icons/contact-mobile.svg">
+                    <img src="icons/contact.svg" class="outline-svg">
+                </picture>
             </div>
         </div>
         <!-- end -->

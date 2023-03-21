@@ -1,0 +1,266 @@
+@media only screen and (max-width: 750px){
+
+body {
+    margin: 0 0;
+}
+
+h1, h2, h3, h4, h5, p {
+    line-height: 130%;
+}
+
+nav {
+    display: none;
+}
+
+.main-section {
+    width: 100%;
+    background-image: url(img/main-photo.png);
+    background-color: #202020;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 98vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* z-index: 8; */
+}
+
+.section{
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 10%;
+    /* padding-bottom: 10%; */
+    /* z-index: 8; */
+}
+
+.content {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end; 
+    padding-bottom: 10px;  
+}
+
+.content h1 {
+    color:#202020;
+    margin: 0;
+    margin-bottom: 10%;
+}
+
+
+.content h3 {
+    font-weight: 700;
+    color:#202020;
+    margin: 0;
+}
+
+.content .htext img{
+    position: absolute;
+    margin: 20px 0;
+
+}
+
+.content .htext p {
+    width: 100%;
+    line-height: 140%;
+}
+
+.htext {
+    margin-bottom: 5%;
+}
+
+nav {
+    left: 10%;
+    position: absolute;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 30px;
+}
+
+nav li{
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 0;
+    width: 100px;
+}
+
+nav li a {
+    font-family: 'Ubuntu';
+    font-style: regular;
+    text-decoration: none;
+    color: #F1F1F1;
+}
+
+.li-arrow {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 10px;
+    display: none;
+}
+
+nav li a:hover + .li-arrow {
+    color: #D8BA53;
+    display: block;
+}
+
+.main-text {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h3 {
+    font-family: 'Ubuntu';
+    font-style: regular;
+    font-weight: 400;
+    font-size: 40px;
+    /* line-height: 46px; */
+    color: #202020;
+}
+
+h3 {
+    font-size: 24px; 
+    font-weight: 400;
+}
+
+.main-text div h1 {
+    font-weight: 700;
+    color: #F1F1F1;
+}
+
+.main-text div h3 {
+    color: #F1F1F1;
+    font-weight: 400;
+}
+
+.img-accent{
+    display: none;
+}
+
+p {
+    font-family: 'Ubuntu';
+    font-style: regular;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.main-more {
+    padding: 0;
+    color: #F1F1F1;
+}
+
+.inline {
+    display: inline;
+}
+
+.main-more p a {
+    font-family: 'Ubuntu';
+    font-style: regular;
+    text-decoration: none;
+    color: #F1F1F1;
+}
+
+.main-more p a:hover {
+    color: #D8BA53;
+}
+
+.button-light, .button-dark{
+    appearance: button;
+    font-family: 'Ubuntu';
+    font-style: regular;
+    width: 100%;
+
+    padding: 12px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 30px 0px; */
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #F1F1F1;
+    color: #F1F1F1;
+}
+
+.button-dark {
+    border: 2px solid #202020;
+    color: #202020;
+}
+
+.button-light:hover, .button-dark:hover{
+    border: 2px solid #D8BA53;
+    color: #D8BA53;
+} 
+.button-attention {
+    position: relative;
+}
+
+/* .button-attention a {
+    position: absolute;
+} */
+
+.button-attention img {
+    position: absolute;
+    padding-top: 11px;
+    padding-left: 50%;
+    height: 80%;
+    width: auto;
+
+    pointer-events: none;
+}
+
+.temp{
+    display: flex;
+}
+
+.posts {
+    width: 100%;
+}
+
+.post-img {
+    width: 100%;
+}
+
+span {
+    display: block;
+    margin-bottom: 1.5em;
+}
+
+.outline-svg {
+    height: 70px;
+}
+
+.contact {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 20%;
+}
+
+.contact div h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.contact div h3 a{
+    text-decoration: none;
+    color: #202020;
+}
+
+/* .contact div {
+    width: 100%;
+} */
+
+}
