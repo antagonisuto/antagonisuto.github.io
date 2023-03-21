@@ -62,7 +62,8 @@ h1, h2, h3, h4, h5, p {
 }
 
 .content .htext p {
-    width: 400px;
+    width: 60%;
+    line-height: 140%;
 }
 
 .htext {
@@ -175,7 +176,7 @@ p {
     font-family: 'Ubuntu';
     font-style: regular;
 
-    padding: 12px 50px;
+    padding: 12px 80px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -196,14 +197,22 @@ p {
     border: 2px solid #D8BA53;
     color: #D8BA53;
 } 
-/* .button-attention {
-    display: flex;
+.button-attention {
+    position: relative;
+}
+
+/* .button-attention a {
+    position: absolute;
 } */
 
 .button-attention img {
-    height: 50px;
-    width:min-content;
     position: absolute;
+    padding-top: 11px;
+    padding-left: 25px;
+    height: 80%;
+    width: auto;
+
+    pointer-events: none;
 }
 
 .temp{
@@ -214,7 +223,7 @@ p {
     width: 60%;
 }
 
-.posts img {
+.post-img {
     width: 100%;
 }
 
@@ -222,3 +231,28 @@ span {
     display: block;
     margin-bottom: 1.5em;
 }
+
+.outline-svg {
+    height: 70px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 20%;
+}
+
+.contact div h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.contact div h3 a{
+    text-decoration: none;
+    color: #202020;
+}
+
+/* .contact div {
+    width: 100%;
+} */
